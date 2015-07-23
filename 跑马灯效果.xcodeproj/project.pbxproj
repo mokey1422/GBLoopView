@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		843F279E1B5CA51C001C1D0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F279D1B5CA51C001C1D0A /* main.m */; };
+		843F27A11B5CA51C001C1D0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F27A01B5CA51C001C1D0A /* AppDelegate.m */; };
+		843F27A41B5CA51C001C1D0A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F27A31B5CA51C001C1D0A /* ViewController.m */; };
+		843F27A71B5CA51C001C1D0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843F27A51B5CA51C001C1D0A /* Main.storyboard */; };
+		843F27A91B5CA51C001C1D0A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843F27A81B5CA51C001C1D0A /* Images.xcassets */; };
+		843F27AC1B5CA51C001C1D0A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843F27AA1B5CA51C001C1D0A /* LaunchScreen.xib */; };
+		843F27B81B5CA51C001C1D0A /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F27B71B5CA51C001C1D0A /* _____Tests.m */; };
+		843F27CB1B5CCB82001C1D0A /* GBLoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F27CA1B5CCB82001C1D0A /* GBLoopView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		843F27B21B5CA51C001C1D0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 843F27901B5CA51C001C1D0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 843F27971B5CA51C001C1D0A;
+			remoteInfo = "跑马灯效果";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		843F27981B5CA51C001C1D0A /* 跑马灯效果.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "跑马灯效果.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		843F279C1B5CA51C001C1D0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		843F279D1B5CA51C001C1D0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		843F279F1B5CA51C001C1D0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		843F27A01B5CA51C001C1D0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		843F27A21B5CA51C001C1D0A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		843F27A31B5CA51C001C1D0A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		843F27A61B5CA51C001C1D0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		843F27A81B5CA51C001C1D0A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		843F27AB1B5CA51C001C1D0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		843F27B11B5CA51C001C1D0A /* 跑马灯效果Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "跑马灯效果Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		843F27B61B5CA51C001C1D0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		843F27B71B5CA51C001C1D0A /* _____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____Tests.m"; sourceTree = "<group>"; };
+		843F27C91B5CCB82001C1D0A /* GBLoopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBLoopView.h; sourceTree = "<group>"; };
+		843F27CA1B5CCB82001C1D0A /* GBLoopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBLoopView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		843F27951B5CA51C001C1D0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		843F27AE1B5CA51C001C1D0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		843F278F1B5CA51C001C1D0A = {
+			isa = PBXGroup;
+			children = (
+				843F279A1B5CA51C001C1D0A /* 跑马灯效果 */,
+				843F27B41B5CA51C001C1D0A /* 跑马灯效果Tests */,
+				843F27991B5CA51C001C1D0A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		843F27991B5CA51C001C1D0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				843F27981B5CA51C001C1D0A /* 跑马灯效果.app */,
+				843F27B11B5CA51C001C1D0A /* 跑马灯效果Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		843F279A1B5CA51C001C1D0A /* 跑马灯效果 */ = {
+			isa = PBXGroup;
+			children = (
+				843F27C81B5CCB82001C1D0A /* GBLoopView */,
+				843F279F1B5CA51C001C1D0A /* AppDelegate.h */,
+				843F27A01B5CA51C001C1D0A /* AppDelegate.m */,
+				843F27A21B5CA51C001C1D0A /* ViewController.h */,
+				843F27A31B5CA51C001C1D0A /* ViewController.m */,
+				843F27A51B5CA51C001C1D0A /* Main.storyboard */,
+				843F27A81B5CA51C001C1D0A /* Images.xcassets */,
+				843F27AA1B5CA51C001C1D0A /* LaunchScreen.xib */,
+				843F279B1B5CA51C001C1D0A /* Supporting Files */,
+			);
+			path = "跑马灯效果";
+			sourceTree = "<group>";
+		};
+		843F279B1B5CA51C001C1D0A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				843F279C1B5CA51C001C1D0A /* Info.plist */,
+				843F279D1B5CA51C001C1D0A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		843F27B41B5CA51C001C1D0A /* 跑马灯效果Tests */ = {
+			isa = PBXGroup;
+			children = (
+				843F27B71B5CA51C001C1D0A /* _____Tests.m */,
+				843F27B51B5CA51C001C1D0A /* Supporting Files */,
+			);
+			path = "跑马灯效果Tests";
+			sourceTree = "<group>";
+		};
+		843F27B51B5CA51C001C1D0A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				843F27B61B5CA51C001C1D0A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		843F27C81B5CCB82001C1D0A /* GBLoopView */ = {
+			isa = PBXGroup;
+			children = (
+				843F27C91B5CCB82001C1D0A /* GBLoopView.h */,
+				843F27CA1B5CCB82001C1D0A /* GBLoopView.m */,
+			);
+			path = GBLoopView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		843F27971B5CA51C001C1D0A /* 跑马灯效果 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 843F27BB1B5CA51C001C1D0A /* Build configuration list for PBXNativeTarget "跑马灯效果" */;
+			buildPhases = (
+				843F27941B5CA51C001C1D0A /* Sources */,
+				843F27951B5CA51C001C1D0A /* Frameworks */,
+				843F27961B5CA51C001C1D0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "跑马灯效果";
+			productName = "跑马灯效果";
+			productReference = 843F27981B5CA51C001C1D0A /* 跑马灯效果.app */;
+			productType = "com.apple.product-type.application";
+		};
+		843F27B01B5CA51C001C1D0A /* 跑马灯效果Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 843F27BE1B5CA51C001C1D0A /* Build configuration list for PBXNativeTarget "跑马灯效果Tests" */;
+			buildPhases = (
+				843F27AD1B5CA51C001C1D0A /* Sources */,
+				843F27AE1B5CA51C001C1D0A /* Frameworks */,
+				843F27AF1B5CA51C001C1D0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				843F27B31B5CA51C001C1D0A /* PBXTargetDependency */,
+			);
+			name = "跑马灯效果Tests";
+			productName = "跑马灯效果Tests";
+			productReference = 843F27B11B5CA51C001C1D0A /* 跑马灯效果Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		843F27901B5CA51C001C1D0A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = zhangguobing;
+				TargetAttributes = {
+					843F27971B5CA51C001C1D0A = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					843F27B01B5CA51C001C1D0A = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 843F27971B5CA51C001C1D0A;
+					};
+				};
+			};
+			buildConfigurationList = 843F27931B5CA51C001C1D0A /* Build configuration list for PBXProject "跑马灯效果" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 843F278F1B5CA51C001C1D0A;
+			productRefGroup = 843F27991B5CA51C001C1D0A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				843F27971B5CA51C001C1D0A /* 跑马灯效果 */,
+				843F27B01B5CA51C001C1D0A /* 跑马灯效果Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		843F27961B5CA51C001C1D0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				843F27A71B5CA51C001C1D0A /* Main.storyboard in Resources */,
+				843F27AC1B5CA51C001C1D0A /* LaunchScreen.xib in Resources */,
+				843F27A91B5CA51C001C1D0A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		843F27AF1B5CA51C001C1D0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		843F27941B5CA51C001C1D0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				843F27A41B5CA51C001C1D0A /* ViewController.m in Sources */,
+				843F27A11B5CA51C001C1D0A /* AppDelegate.m in Sources */,
+				843F27CB1B5CCB82001C1D0A /* GBLoopView.m in Sources */,
+				843F279E1B5CA51C001C1D0A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		843F27AD1B5CA51C001C1D0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				843F27B81B5CA51C001C1D0A /* _____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		843F27B31B5CA51C001C1D0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 843F27971B5CA51C001C1D0A /* 跑马灯效果 */;
+			targetProxy = 843F27B21B5CA51C001C1D0A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		843F27A51B5CA51C001C1D0A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				843F27A61B5CA51C001C1D0A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		843F27AA1B5CA51C001C1D0A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				843F27AB1B5CA51C001C1D0A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		843F27B91B5CA51C001C1D0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		843F27BA1B5CA51C001C1D0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		843F27BC1B5CA51C001C1D0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "跑马灯效果/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		843F27BD1B5CA51C001C1D0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "跑马灯效果/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		843F27BF1B5CA51C001C1D0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "跑马灯效果Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/跑马灯效果.app/跑马灯效果";
+			};
+			name = Debug;
+		};
+		843F27C01B5CA51C001C1D0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "跑马灯效果Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/跑马灯效果.app/跑马灯效果";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		843F27931B5CA51C001C1D0A /* Build configuration list for PBXProject "跑马灯效果" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				843F27B91B5CA51C001C1D0A /* Debug */,
+				843F27BA1B5CA51C001C1D0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		843F27BB1B5CA51C001C1D0A /* Build configuration list for PBXNativeTarget "跑马灯效果" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				843F27BC1B5CA51C001C1D0A /* Debug */,
+				843F27BD1B5CA51C001C1D0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		843F27BE1B5CA51C001C1D0A /* Build configuration list for PBXNativeTarget "跑马灯效果Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				843F27BF1B5CA51C001C1D0A /* Debug */,
+				843F27C01B5CA51C001C1D0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 843F27901B5CA51C001C1D0A /* Project object */;
+}
