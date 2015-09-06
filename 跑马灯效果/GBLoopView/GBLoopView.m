@@ -9,8 +9,10 @@
 #import "GBLoopView.h"
 #import <QuartzCore/QuartzCore.h>
 @implementation GBLoopView
+
 - (id)initWithFrame:(CGRect)frame
 {
+  
     self = [super initWithFrame:frame];
     if (self) {
        
@@ -18,25 +20,49 @@
     }
     return self;
 }
+        /*  返回当前屏幕的size*/
++(CGSize) screenSize{
+    UIInterfaceOrientation orientation =[UIApplication sharedApplication].statusBarOrientation;
+    if(appScreenSize.width==0 || lastOrientation != orientation){
+        appScreenSize = CGSizeMake(0, 0);
+        CGSize screenSize = [[UIScreen mainScreen] bounds].size; // 这里如果去掉状态栏，只要用applicationFrame即可。
+        if(orientation == UIDeviceOrientationLandscapeLeft ||orientation == UIDeviceOrientationLandscapeRight){
+            // 横屏，那么，返回的宽度就应该是系统给的高度。注意这里，全屏应用和非全屏应用，应该注意自己增减状态栏的高度。
+            appScreenSize.width = screenSize.height;
+            appScreenSize.height = screenSize.width;
+        }else{
+            appScreenSize.width = screenSize.width;
+            appScreenSize.height = screenSize.height;
+        }
+        lastOrientation = orientation;
+    }
+    return appScreenSize;
+}
+
 -(void)setupView {
     
-    [self setBackgroundColor:[UIColor orangeColor]];
+    
     tickerLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
     [tickerLabel setBackgroundColor:[UIColor clearColor]];
-    
+    //屏幕状态监测
+     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(statusBarOrientationChange:) name:UIApplicationDidChangeStatusBarOrientationNotification object:nil];
     [tickerLabel setNumberOfLines:1];
-    tickerLabel.font=[UIFont boldSystemFontOfSize:15];
+    tickerLabel.font=[UIFont boldSystemFontOfSize:15.f];
     tickerLabel.textColor=[UIColor whiteColor];
     [self addSubview:tickerLabel];
     loops = YES;
     // 默认初始方向是向左
     _Direction = GBLoopDirectionLeft;
 }
+-(void)setBackColor:(UIColor *)color
+{
+    [self setBackgroundColor:color];
+}
 -(void)animateCurrentTickerString
 {
-    NSString *currentString = [_tickerStrings objectAtIndex:currentIndex];
+    NSString *currentString = [_tickerArrs objectAtIndex:currentIndex];
     
-    NSDictionary *attrs = @{NSFontAttributeName : [UIFont boldSystemFontOfSize:15]};
+    NSDictionary *attrs = @{NSFontAttributeName : [UIFont boldSystemFontOfSize:15.f]};
     CGSize textSize=[currentString sizeWithAttributes:attrs];
 
     // 设置起点和终点
@@ -74,7 +100,7 @@
 {
     
     currentIndex++;
-    if(currentIndex >= [_tickerStrings count]) {
+    if(currentIndex >= [_tickerArrs count]) {
         currentIndex = 0;
 
         if(!loops) {
@@ -122,8 +148,27 @@
         running = YES;
     }
 }
-
-
+#pragma mark - 通知屏幕状态返回View大小
+- (void)statusBarOrientationChange:(NSNotification *)notification
+{
+    
+    UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
+    if (orientation == UIInterfaceOrientationLandscapeRight || orientation ==UIInterfaceOrientationLandscapeLeft)
+    {
+        //横屏
+        self.frame = CGRectMake(0, kTOPHEI, [GBLoopView screenSize].height, kVIEWHEI);
+    }
+    
+    
+    if (orientation == UIInterfaceOrientationPortrait ||
+        orientation == UIInterfaceOrientationPortraitUpsideDown)
+    {
+        //竖屏
+        self.frame = CGRectMake(0, kTOPHEI, [GBLoopView screenSize].width, kVIEWHEI);
+    }
+    
+    
+}
 #pragma mark - UIView layer animations utilities
 -(void)pauseLayer:(CALayer *)layer
 {

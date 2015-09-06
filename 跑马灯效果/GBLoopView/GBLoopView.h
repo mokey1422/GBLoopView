@@ -13,6 +13,11 @@ typedef enum
     GBLoopDirectionRight,
 }GBLoopDirection;
 
+#define kTOPHEI 64    //距离底部高度
+#define kVIEWHEI 30     //背景View的高度
+
+static CGSize appScreenSize;
+static UIInterfaceOrientation lastOrientation;
 
 @interface GBLoopView : UIView{
   
@@ -30,7 +35,10 @@ typedef enum
     
 
 }
-
+/**
+ *  返回当前屏幕size
+ */
++(CGSize) screenSize;
 /**
  *  跑马灯loop速度
  */
@@ -38,12 +46,15 @@ typedef enum
 /**
  *  显示的内容(支持多条数据)
  */
-@property(nonatomic, retain) NSArray *tickerStrings;
+@property(nonatomic, retain) NSArray *tickerArrs;
 /**
  * loop方向(左/右)
  */
 @property(nonatomic) GBLoopDirection Direction;
-
+/**
+ *  设置背景颜色
+ */
+-(void)setBackColor:(UIColor *)color;
 /**
  *  开启
  */
