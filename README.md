@@ -6,20 +6,30 @@
 * 将文件导入到你的工程里面
 * 在使用的地方包含头文件，执行下面的代码：
 ```
-    NSArray *loopStrings = [NSArray arrayWithObjects:@"在iOS中动画实现技术主要是：Core Animation", @"我们知道每个UIView都关联到一个CALayer对象，CALayer是Core Animation中的图层。",@"zsc库真好用",nil];
+    NSArray *loopArrs = [NSArray arrayWithObjects:@"在iOS中动画实现技术主要是：Core Animation", @"我们知道每个UIView都关联到一个CALayer对象，CALayer是Core Animation中的图层。",@"zsc库真好用",nil];
     
     _LoopView = [[GBLoopView alloc] initWithFrame:CGRectMake(0, 64,self.view.bounds.size.width, 30)];
     [_LoopView setDirection:GBLoopDirectionRight];
-    [_LoopView setTickerStrings:loopStrings];
+    [_LoopView setTickerArrs:loopArrs];
     [_LoopView setSpeed:60.0f];
     [self.view addSubview:_LoopView];
     [_LoopView start];
     
 ```
-* loopStrings是你的数据源<br>
+* loopArrs是你的数据源 （数组）<br>
 * setDirection设置走马灯的方向支持从左到右 和从右到左
 * setSpeed 设置走马灯的速度
 * [_LoopView start]开启操作
+
+
+
+##更新
+
+ * 优化滚动的流畅性
+ 
+ * 增添背景View颜色修改方法
+ 
+ * 适配横竖屏（通知）
 
 #效果图：
 ![image](https://github.com/mokey1422/gifResource/blob/master/loopview.gif)
