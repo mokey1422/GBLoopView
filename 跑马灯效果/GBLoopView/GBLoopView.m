@@ -8,7 +8,10 @@
 
 #import "GBLoopView.h"
 #import <QuartzCore/QuartzCore.h>
+<<<<<<< HEAD
 #define iOS8 [[UIDevice currentDevice].systemVersion floatValue] >= 8.0
+=======
+>>>>>>> 9bbbac5c0c576a430647d45d910805040eb6e6c4
 @implementation GBLoopView
 
 - (id)initWithFrame:(CGRect)frame
@@ -21,8 +24,13 @@
     }
     return self;
 }
+<<<<<<< HEAD
 /*  返回当前屏幕的size*/
 -(CGSize) screenSize{
+=======
+        /*  返回当前屏幕的size*/
++(CGSize) screenSize{
+>>>>>>> 9bbbac5c0c576a430647d45d910805040eb6e6c4
     UIInterfaceOrientation orientation =[UIApplication sharedApplication].statusBarOrientation;
     if(appScreenSize.width==0 || lastOrientation != orientation){
         appScreenSize = CGSizeMake(0, 0);
@@ -157,6 +165,7 @@
     if (orientation == UIInterfaceOrientationLandscapeRight || orientation ==UIInterfaceOrientationLandscapeLeft)
     {
         //横屏
+<<<<<<< HEAD
         if(iOS8){
             
           self.frame = CGRectMake(0, self.frame.origin.y, [self screenSize].height, self.frame.size.height);
@@ -170,11 +179,21 @@
         
     }
     
+=======
+        self.frame = CGRectMake(0, kTOPHEI, [GBLoopView screenSize].height, kVIEWHEI);
+    }
+    
+    
+>>>>>>> 9bbbac5c0c576a430647d45d910805040eb6e6c4
     if (orientation == UIInterfaceOrientationPortrait ||
         orientation == UIInterfaceOrientationPortraitUpsideDown)
     {
         //竖屏
+<<<<<<< HEAD
         self.frame = CGRectMake(0, self.frame.origin.y, [self screenSize].width, self.frame.size.height);
+=======
+        self.frame = CGRectMake(0, kTOPHEI, [GBLoopView screenSize].width, kVIEWHEI);
+>>>>>>> 9bbbac5c0c576a430647d45d910805040eb6e6c4
     }
     
     

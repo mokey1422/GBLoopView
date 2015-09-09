@@ -362,7 +362,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "跑马灯效果/Info.plist";
+<<<<<<< HEAD
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+=======
+>>>>>>> 9bbbac5c0c576a430647d45d910805040eb6e6c4
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -373,7 +376,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "跑马灯效果/Info.plist";
+<<<<<<< HEAD
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+=======
+>>>>>>> 9bbbac5c0c576a430647d45d910805040eb6e6c4
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -432,7 +438,10 @@
 				843F27BD1B5CA51C001C1D0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+<<<<<<< HEAD
 			defaultConfigurationName = Release;
+=======
+>>>>>>> 9bbbac5c0c576a430647d45d910805040eb6e6c4
 		};
 		843F27BE1B5CA51C001C1D0A /* Build configuration list for PBXNativeTarget "跑马灯效果Tests" */ = {
 			isa = XCConfigurationList;
@@ -441,7 +450,10 @@
 				843F27C01B5CA51C001C1D0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+<<<<<<< HEAD
 			defaultConfigurationName = Release;
+=======
+>>>>>>> 9bbbac5c0c576a430647d45d910805040eb6e6c4
 		};
 /* End XCConfigurationList section */
 	};
