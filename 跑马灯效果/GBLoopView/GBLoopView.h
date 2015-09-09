@@ -36,10 +36,7 @@ static UIInterfaceOrientation lastOrientation;
     
 
 }
-/**
- *  返回当前屏幕size
- */
-+(CGSize) screenSize;
+
 /**
  *  跑马灯loop速度
  */

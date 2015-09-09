@@ -22,7 +22,7 @@
     return self;
 }
 /*  返回当前屏幕的size*/
-+(CGSize) screenSize{
+-(CGSize) screenSize{
     UIInterfaceOrientation orientation =[UIApplication sharedApplication].statusBarOrientation;
     if(appScreenSize.width==0 || lastOrientation != orientation){
         appScreenSize = CGSizeMake(0, 0);
@@ -159,11 +159,11 @@
         //横屏
         if(iOS8){
             
-          self.frame = CGRectMake(0, self.frame.origin.y, [GBLoopView screenSize].height, self.frame.size.height);
+          self.frame = CGRectMake(0, self.frame.origin.y, [self screenSize].height, self.frame.size.height);
             
         }else{
            
-          self.frame = CGRectMake(0, self.frame.origin.y, [GBLoopView screenSize].width, self.frame.size.height);
+          self.frame = CGRectMake(0, self.frame.origin.y, [self screenSize].width, self.frame.size.height);
             
         }
       
@@ -174,7 +174,7 @@
         orientation == UIInterfaceOrientationPortraitUpsideDown)
     {
         //竖屏
-        self.frame = CGRectMake(0, self.frame.origin.y, [GBLoopView screenSize].width, self.frame.size.height);
+        self.frame = CGRectMake(0, self.frame.origin.y, [self screenSize].width, self.frame.size.height);
     }
     
     
