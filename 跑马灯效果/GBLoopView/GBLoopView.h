@@ -7,28 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
-<<<<<<< HEAD
 //方向
-=======
->>>>>>> 9bbbac5c0c576a430647d45d910805040eb6e6c4
+
 typedef enum
 {
     GBLoopDirectionLeft,
     GBLoopDirectionRight,
+    
 }GBLoopDirection;
-
-<<<<<<< HEAD
-#define kTOPHEI 64      //距离底部高度
-=======
-#define kTOPHEI 64    //距离底部高度
->>>>>>> 9bbbac5c0c576a430647d45d910805040eb6e6c4
-#define kVIEWHEI 30     //背景View的高度
 
 static CGSize appScreenSize;
 static UIInterfaceOrientation lastOrientation;
 
 @interface GBLoopView : UIView{
-  
+    
     // 记录
     int currentIndex;
     
@@ -41,16 +33,9 @@ static UIInterfaceOrientation lastOrientation;
     // 内容载体
     UILabel *tickerLabel;
     
-
+    
 }
-<<<<<<< HEAD
 
-=======
-/**
- *  返回当前屏幕size
- */
-+(CGSize) screenSize;
->>>>>>> 9bbbac5c0c576a430647d45d910805040eb6e6c4
 /**
  *  跑马灯loop速度
  */

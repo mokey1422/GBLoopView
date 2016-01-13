@@ -8,29 +8,25 @@
 
 #import "GBLoopView.h"
 #import <QuartzCore/QuartzCore.h>
-<<<<<<< HEAD
+
 #define iOS8 [[UIDevice currentDevice].systemVersion floatValue] >= 8.0
-=======
->>>>>>> 9bbbac5c0c576a430647d45d910805040eb6e6c4
+
 @implementation GBLoopView
 
 - (id)initWithFrame:(CGRect)frame
 {
-  
+    
     self = [super initWithFrame:frame];
     if (self) {
-       
+        
         [self setupView];
     }
     return self;
 }
-<<<<<<< HEAD
+
 /*  返回当前屏幕的size*/
 -(CGSize) screenSize{
-=======
-        /*  返回当前屏幕的size*/
-+(CGSize) screenSize{
->>>>>>> 9bbbac5c0c576a430647d45d910805040eb6e6c4
+    
     UIInterfaceOrientation orientation =[UIApplication sharedApplication].statusBarOrientation;
     if(appScreenSize.width==0 || lastOrientation != orientation){
         appScreenSize = CGSizeMake(0, 0);
@@ -54,7 +50,7 @@
     tickerLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
     [tickerLabel setBackgroundColor:[UIColor clearColor]];
     //屏幕状态监测
-     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(statusBarOrientationChange:) name:UIApplicationDidChangeStatusBarOrientationNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(statusBarOrientationChange:) name:UIApplicationDidChangeStatusBarOrientationNotification object:nil];
     [tickerLabel setNumberOfLines:1];
     tickerLabel.font=[UIFont boldSystemFontOfSize:15.f];
     tickerLabel.textColor=[UIColor whiteColor];
@@ -73,7 +69,7 @@
     
     NSDictionary *attrs = @{NSFontAttributeName : [UIFont boldSystemFontOfSize:15.f]};
     CGSize textSize=[currentString sizeWithAttributes:attrs];
-
+    
     // 设置起点和终点
     float startingX = 0.0f;
     float endX = 0.0f;
@@ -89,7 +85,7 @@
             break;
     }
     
-   
+    
     [tickerLabel setFrame:CGRectMake(startingX, tickerLabel.frame.origin.y, textSize.width, tickerLabel.frame.size.height)];
     [tickerLabel setText:currentString];
     float duration = (textSize.width + self.frame.size.width) / _Speed;
@@ -111,15 +107,15 @@
     currentIndex++;
     if(currentIndex >= [_tickerArrs count]) {
         currentIndex = 0;
-
+        
         if(!loops) {
-           
+            
             running = NO;
             
             return;
         }
     }
-
+    
     [self animateCurrentTickerString];
 }
 
@@ -150,7 +146,7 @@
 -(void)resume {
     
     // 检查状态不运行则恢复运行
-    if(!running) { 
+    if(!running) {
         
         [self resumeLayer:self.layer];
         
@@ -165,35 +161,28 @@
     if (orientation == UIInterfaceOrientationLandscapeRight || orientation ==UIInterfaceOrientationLandscapeLeft)
     {
         //横屏
-<<<<<<< HEAD
+        
         if(iOS8){
             
-          self.frame = CGRectMake(0, self.frame.origin.y, [self screenSize].height, self.frame.size.height);
+            self.frame = CGRectMake(0, self.frame.origin.y, [self screenSize].height, self.frame.size.height);
             
         }else{
-           
-          self.frame = CGRectMake(0, self.frame.origin.y, [self screenSize].width, self.frame.size.height);
+            
+            self.frame = CGRectMake(0, self.frame.origin.y, [self screenSize].width, self.frame.size.height);
             
         }
-      
+        
         
     }
     
-=======
-        self.frame = CGRectMake(0, kTOPHEI, [GBLoopView screenSize].height, kVIEWHEI);
-    }
-    
-    
->>>>>>> 9bbbac5c0c576a430647d45d910805040eb6e6c4
     if (orientation == UIInterfaceOrientationPortrait ||
         orientation == UIInterfaceOrientationPortraitUpsideDown)
     {
         //竖屏
-<<<<<<< HEAD
+        
         self.frame = CGRectMake(0, self.frame.origin.y, [self screenSize].width, self.frame.size.height);
-=======
-        self.frame = CGRectMake(0, kTOPHEI, [GBLoopView screenSize].width, kVIEWHEI);
->>>>>>> 9bbbac5c0c576a430647d45d910805040eb6e6c4
+        
+        
     }
     
     
@@ -215,4 +204,5 @@
     CFTimeInterval timeSincePause = [layer convertTime:CACurrentMediaTime() fromLayer:nil] - pausedTime;
     layer.beginTime = timeSincePause;
 }
+
 @end
